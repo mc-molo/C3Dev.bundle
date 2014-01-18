@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    
+	<key>Search</key>
+	<dict>
+		<key>30C3</key>
+	</dict>
+
+	<key>URL</key>
+        <dict>
+            <key>30C3</key>
+			<dict>
+				<key>URLPatterns</key>
+				<array>
+					<string>http://.*/congress/2013/mp4/.*</string>	
+				</array>
+
+				<key>TestURLs</key>
+				<array>
+					<string>http://cdn.media.ccc.de/congress/2013/mp4/30c3-5185-en-FPGA_101_h264-hq.mp4</string>
+					<string>http://141.70.0.13/congress/2013/mp4/30c3-5290-en-Console_Hacking_2013_h264-hq.mp4</string>
+				</array>
+			</dict>
+        </dict>
+</dict>
+</plist>

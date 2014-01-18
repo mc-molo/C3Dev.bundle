@@ -1,0 +1,29 @@
+def MetadataObjectForURL(url):
+# Here you are using the ElementFromURL() API to parse or pull up all the data from the webpage. 
+# See the Framework documentation API reference for all the choices for parsing data
+	page = HTML.ElementFromURL(url)
+
+	#title = page.xpath("//head//meta[@property='og:title']")[0].get('content')
+	#description = page.xpath("//head//meta[@property='og:description']")[0].get('content')
+	#thumb = page.xpath("//head//meta[@property='og:image']")[0].get('url')	
+	
+	return VideoClipObject(
+		title = 'title',
+		summary = 'description'
+	)
+	
+	####################################################################################################
+def MediaObjectsForURL(url):
+	return [
+		MediaObject(
+			video_codec = VideoCodec.H264,
+			audio_codec = AudioCodec.AAC,
+			video_resolution = '720',
+			audio_channels = 2,
+			container = 'mp4',
+		)
+	]
+	
+def NormalizeURL(url):
+
+    return url
